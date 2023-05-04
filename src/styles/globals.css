@@ -12,6 +12,7 @@ body {
   --custom-color: #fff;
   --custom-color-brand: #24b47e;
   --custom-color-secondary: #666;
+  --custom-color-gray: #808080;
   --custom-border: 1px solid #333;
   --custom-border-radius: 5px;
   --custom-spacing: 5px;
@@ -259,6 +260,12 @@ button.primary,
 .button.primary {
   background-color: var(--custom-color-brand);
   border: 1px solid var(--custom-color-brand);
+}
+
+button.gray,
+.button.gray {
+  background-color: var(--custom-color-gray);
+  border: 1px solid var(--custom-color-gray);
 }
 
 /* Widgets */

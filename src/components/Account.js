@@ -88,7 +88,7 @@ export default function Account({ session }) {
                     onChange={(e) => setUsername(e.target.value)}
                 />
             </div>
-            <div>
+            <div className='mb-12'>
                 <label htmlFor="website">Website</label>
                 <input
                     id="website"
@@ -98,18 +98,16 @@ export default function Account({ session }) {
                 />
             </div>
 
-            <div>
+            <div className='flex items-center'>
                 <button
-                    className="button primary block"
+                    className="button primary inline-block mr-4"
                     onClick={() => updateProfile({ username, website, avatar_url })}
                     disabled={loading}
                 >
                     {loading ? 'Loading ...' : 'Update'}
                 </button>
-            </div>
 
-            <div>
-                <button className="button block" onClick={() => supabase.auth.signOut()}>
+                <button className="button inline-block gray" onClick={() => supabase.auth.signOut()}>
                     Sign Out
                 </button>
             </div>
